@@ -7,7 +7,7 @@ void ofApp::setup(){
 
 	ofBackground(255);
 	ofSetFrameRate(30);
-
+	int h = 0;
 	value = 0;
 	cellsize = 3;
 	index = 0;
