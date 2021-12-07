@@ -117,7 +117,7 @@ void ofApp::drawPicture() {
 			x = i * cellsize + cellsize / 2;
 			y = j * cellsize + cellsize / 2;
 
-			ofColor c = image[index].getColor(x, y);
+			ofColor &c = image[index].getColor(x, y);
 			ofColor c1(255, 255, 255);
 			zBright = c.getBrightness() * sin(0.2 +  ofGetElapsedTimef() * 0.038) * 4;
 			float z = ofMap(c.getBrightness(), 0, 255, 0, mouseX);
